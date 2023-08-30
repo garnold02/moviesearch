@@ -33,7 +33,7 @@ const Content = styled.div`
 `;
 
 export default function SearchPage() {
-    const [searchParams, _] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const query = searchParams.get("q") ?? "";
 
     const { i18n } = useTranslation();
@@ -45,7 +45,7 @@ export default function SearchPage() {
 
     useEffect(() => {
         tmdbSearchMovie({ query: query, language: i18n.language, page: page }).then(setResults);
-    }, [query, page]);
+    }, [query, page, i18n.language]);
 
     useEffect(() => {
         window.scrollTo(0, 0);

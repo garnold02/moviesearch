@@ -47,7 +47,7 @@ export default function MoviePage({ movieId }: Props) {
     useEffect(() => {
         tmdbMovieDetails(movieId, { language: i18n.language }).then(setDetails);
         tmdbMovieCredits(movieId, { language: i18n.language }).then(setCredits);
-    }, [movieId]);
+    }, [movieId, i18n.language]);
 
     if (!details || !credits) {
         return <Loading />;

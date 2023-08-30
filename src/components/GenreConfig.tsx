@@ -29,7 +29,7 @@ export default function GenreConfig({ onChange }: Props) {
 
     useEffect(() => {
         tmdbGenreMovieList({ language: i18n.language }).then((v) => setGenres(v.genres));
-    }, []);
+    }, [i18n.language]);
 
     if (!genres) {
         return <></>;

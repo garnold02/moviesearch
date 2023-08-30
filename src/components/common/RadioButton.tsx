@@ -33,9 +33,9 @@ const InnerCircle = styled.div`
 `;
 
 interface Props {
-    id: any;
-    current: any;
-    onClick: (id: any) => void;
+    id: string;
+    current: string;
+    onClick: (id: string) => void;
 }
 
 export default function RadioButton({ id, current, onClick }: Props) {

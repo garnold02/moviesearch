@@ -24,9 +24,9 @@ export default function SortConfig({ onChange }: Props) {
     const { t } = useTranslation();
     const [current, setCurrent] = useState(values[0][1]);
 
-    const onClick = (id: SortBy) => {
+    const onClick = (id: string) => {
         setCurrent(id);
-        if (onChange) onChange(id);
+        if (onChange) onChange(id as SortBy);
     };
 
     return (

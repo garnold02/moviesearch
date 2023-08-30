@@ -50,7 +50,7 @@ export default function DiscoverPage() {
 
     useEffect(() => {
         tmdbDiscoverMovie({ ...params, language: i18n.language, page: page }).then(setResults);
-    }, [params, page]);
+    }, [params, page, i18n.language]);
 
     useEffect(() => {
         window.scrollTo(0, 0);

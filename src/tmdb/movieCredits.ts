@@ -43,6 +43,6 @@ export async function tmdbMovieCredits(
     movieId: number,
     params: TMDBMovieCreditsParams
 ): Promise<TMDBMovieCreditsResponse> {
-    let res = await tmdbApiCall(`movie/${movieId}/credits`, params);
+    const res = await tmdbApiCall(`movie/${movieId}/credits`, params);
     return res as TMDBMovieCreditsResponse;
 }

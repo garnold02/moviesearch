@@ -36,6 +36,13 @@ interface Props {
 }
 
 export default function ProfilePicture({ path }: Props) {
+    const [src, setSrc] = useState<string>();
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        tmdbProfileSource(path, 185).then(setSrc);
+    }, [path]);
+
     if (!path) {
         return (
             <IconFrame>
@@ -43,14 +50,6 @@ export default function ProfilePicture({ path }: Props) {
             </IconFrame>
         );
     }
-
-    const [src, setSrc] = useState<string>();
-
-    useEffect(() => {
-        tmdbProfileSource(path, 185).then(setSrc);
-    }, [path]);
-
-    const [loading, setLoading] = useState(true);
 
     return (
         <>

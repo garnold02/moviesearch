@@ -48,7 +48,7 @@ export default function PageSwitcher({ current, last, onSwitch }: Props) {
         if (onSwitch) onSwitch(current + 1);
     };
 
-    let elements = [];
+    const elements = [];
 
     if (current !== 1) {
         elements.push(

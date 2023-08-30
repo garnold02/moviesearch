@@ -22,12 +22,12 @@ interface Props {
 }
 
 export default function UserScore({ value }: Props) {
+    const { t } = useTranslation();
+    const content = `${Math.round(value * 10)}%`;
+
     if (!value || Number.isNaN(value)) {
         return <></>;
     }
-
-    const { t } = useTranslation();
-    const content = `${Math.round(value * 10)}%`;
 
     return (
         <Container>
