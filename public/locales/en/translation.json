@@ -1,0 +1,22 @@
+{
+    "available_in": "Available in:",
+    "other_language": "Magyar",
+    "detailed_search": "Detailed search",
+    "genres": "Genres",
+    "all_at_once": "All at once",
+    "sort_by": "Sort by",
+    "most_popular": "Most popular",
+    "least_popular": "Least popular",
+    "latest": "Latest",
+    "oldest": "Oldest",
+    "highest_rated": "Highest rated",
+    "lowest_rated": "Lowest rated",
+    "search": "Search",
+    "director": "Director",
+    "overview": "Overview",
+    "user_score": "User score",
+    "cast": "Cast",
+    "no_results": "No results",
+    "no_poster": "No poster found",
+    "footer_message": "MovieSearch by Arnold Gulyás"
+}

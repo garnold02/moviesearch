@@ -1,0 +1,22 @@
+{
+    "available_in": "Elérhető ezen a nyelven is:",
+    "other_language": "English",
+    "detailed_search": "Részletes keresés",
+    "genres": "Műfajok",
+    "all_at_once": "Az összeset tartalmaznia kell",
+    "sort_by": "Rendezés",
+    "most_popular": "Legnépszerűbb",
+    "least_popular": "Legkevésbé népszerű",
+    "latest": "Legújabb",
+    "oldest": "Legrégebbi",
+    "highest_rated": "Legmagasabb értékelés",
+    "lowest_rated": "Legalacsonyabb értékelés",
+    "search": "Keresés",
+    "director": "Rendező",
+    "overview": "Összefoglaló",
+    "user_score": "Felhasználói értékelés",
+    "cast": "Szereplők",
+    "no_results": "Nincs találat",
+    "no_poster": "Nincs poszter",
+    "footer_message": "MovieSearch - Gulyás Arnold"
+}
